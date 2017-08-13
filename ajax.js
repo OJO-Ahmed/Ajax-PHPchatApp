@@ -29,8 +29,8 @@ function chatting(){
             alert("ajax error: " + this.statusText);
         }
     }
-    request.open("POST","chat.php", true)
+    request.open("GET","chat.php", true)
     request.send();
 }
 
-setInterval(function(){chatting()}, 1000);
+setInterval(function(){chatting()}, 5000);
